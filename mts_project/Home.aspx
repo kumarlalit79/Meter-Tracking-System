@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MTSMaster.master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="mts_project.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="icon" type="image/x-icon" href="img/MTS-Lobo.PNG">
     <script src="js/HighChart/highcharts.js"></script>
 <script src="js/HighChart/series-label.js"></script>
 <script src="js/HighChart/exporting.js"></script>

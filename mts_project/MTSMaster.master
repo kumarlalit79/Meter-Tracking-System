@@ -5,7 +5,9 @@
 <html>
 <head id="Head1" runat="server">
     <title>MTS - Dashboard</title>   
+    
     <style>
+        
         /*
        =========================================================
        * ArchitectUI HTML Theme Dashboard - v1.0.0
@@ -14,6 +16,8 @@
     */
     </style>
     <link href="Styles/deshboard/main.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="~/img/MTS-Lobo.PNG/">
+    
    
     <script>
         window.console = window.console || function (t) { };

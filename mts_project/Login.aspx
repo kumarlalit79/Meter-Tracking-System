@@ -7,6 +7,7 @@
     <title>MTS</title>
     <link href="Styles/deshboard/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="Styles/deshboard/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="img/MTS-Lobo.PNG"/>
 
     <style>
         .main-content {
@@ -126,7 +127,7 @@
 
             if (!phonePattern.test(phoneNumber)) {
                 alert("Please enter a valid 10-digit phone number.");
-                return false; 
+                return false;   
             }
              
         }
@@ -193,6 +194,7 @@
         <%--Coded with &hearts; by <a href="https://bit.ly/yinkaenoch">Yinka.</a></p>--%>
     </div>
     </div>
+
     </form>
 
 </body>

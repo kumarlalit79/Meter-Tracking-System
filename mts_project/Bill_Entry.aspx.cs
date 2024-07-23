@@ -111,6 +111,27 @@ namespace mts_project
 
                 //}
 
+                if (!string.IsNullOrEmpty(HdfImg.Value))
+                {
+
+                    string base64String = HdfImg.Value;
+                    string cleanBase64 = base64String;
+                    if (base64String.Contains(","))
+                    {
+                        cleanBase64 = base64String.Split(',')[1];
+                    }
+
+                    // Convert the Base64 string to a byte array
+                    byte[] imageBytes = Convert.FromBase64String(cleanBase64);
+
+                    // Define the path to save the image
+                    string fileName = HiddenField1.Value; // You can generate a unique name if needed
+                    string savePath = Server.MapPath("~/mydoc/") + fileName;
+
+                    // Save the byte array as an image file
+                    System.IO.File.WriteAllBytes(savePath, imageBytes);
+
+                }
 
 
                 if (con.State == ConnectionState.Closed)
@@ -129,7 +150,9 @@ namespace mts_project
                 cmd.Parameters.AddWithValue("@Previous_RDG", txtPrevRDG.Text);
                 cmd.Parameters.AddWithValue("@Present_RDG", txtPresentRDG.Text);
                 cmd.Parameters.AddWithValue("@Total_Bill_Unit", lblTotal.Text);
-                cmd.Parameters.AddWithValue("@Bill_Upload_Path", "~/mydoc/" + FileUpload1.FileName);
+
+                cmd.Parameters.AddWithValue("@Bill_Upload_Path", "~/mydoc/" + HiddenField1.Value);
+                //cmd.Parameters.AddWithValue("@Bill_Upload_Path", "~/mydoc/" + FileUpload1.FileName);
                 cmd.Parameters.AddWithValue("@Current_Bill_Amount", txtBilableAmt.Text);
                 cmd.Parameters.AddWithValue("@Previous_Balance", txtPrevBalance.Text);
                 cmd.Parameters.AddWithValue("@Current_LPS", txtCurrentLPS.Text);
@@ -231,6 +254,14 @@ namespace mts_project
             Response.Redirect("Home.aspx");
         }
 
-        
+        protected void BtnUpload_Click(object sender, EventArgs e)
+        {
+            byte[] imageBytes1 = FileUpload1.FileBytes;
+            string base64String1 = Convert.ToBase64String(imageBytes1);
+            HdfImg.Value = base64String1;
+            string filename = Path.GetFileName(FileUpload1.FileName);
+            string filePath = FileUpload1.PostedFile.FileName;
+            HiddenField1.Value = filePath;//FileUpload1.FileName;
+        }
     }
 }

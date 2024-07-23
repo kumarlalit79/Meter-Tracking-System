@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <link rel="icon" type="image/x-icon" href="img/MTS-Lobo.PNG">
 </asp:Content>
 
 

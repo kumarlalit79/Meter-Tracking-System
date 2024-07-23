@@ -4,6 +4,7 @@
     <script src="js/modalpopup/jquery.min.js" type="text/javascript"></script>
     <script src="js/modalpopup/popper.min.js" type="text/javascript"></script>
     <script src="js/modalpopup/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="icon" type="image/x-icon" href="img/MTS-Lobo.PNG">
 
 </asp:Content>
 

@@ -92,6 +92,7 @@
     <Content Include="js\modalpopup\jquery.min.js" />
     <Content Include="js\modalpopup\popper.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="DatabaseBackup\MTS" />
     <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="My_Account.aspx" />
     <Content Include="Scripts\jquery-1.4.1.js" />

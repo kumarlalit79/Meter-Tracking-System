@@ -3,7 +3,7 @@
 
 ## 🔗 Demo
 
-**Click the image below to watch the full Eatly demo video!**
+**Click the image below to watch the full project demo video!**
 
 [![Click to watch the demo](https://img.youtube.com/vi/PPSzuaebbP4/0.jpg)](https://youtu.be/PPSzuaebbP4)
 

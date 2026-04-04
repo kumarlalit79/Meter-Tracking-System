@@ -2,8 +2,7 @@
 > A web-based application to efficiently record, track, and analyze monthly electricity or utility meter bills.
 
 ## 🔗 Demo
-<!-- Add live link or demo video here -->
-<!-- Add screenshots here -->
+[![Click to watch the demo](https://img.youtube.com/vi/PPSzuaebbP4/maxresdefault.jpg)](https://youtu.be/PPSzuaebbP4)
 
 ## 📋 Description
 The Meter Tracking System (MTS) is designed to streamline the management of utility bills for households or businesses. It allows users to log their monthly meter readings, track bill amounts, and monitor late payment surcharges. Through an intuitive dashboard, users can visualize their consumption patterns, upcoming dues, and historical payment records, effectively replacing manual tracking methods.

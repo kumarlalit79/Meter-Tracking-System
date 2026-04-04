@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Custom MTS Project Ignores
+*.zip
+mts_project/mydoc/*
+!mts_project/mydoc/.gitkeep
+mts_project/DatabaseBackup/*
